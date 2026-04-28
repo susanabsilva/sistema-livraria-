@@ -1,101 +1,89 @@
 # sistema-livraria-
 Sistema de Gestão de Livraria
 
-Descrição
-O Sistema de Gestão de Livraria é uma aplicação web desenvolvida para gerenciar as operações de uma livraria, permitindo o controle de clientes, livros, vendas e estoque.
-O sistema tem como objetivo automatizar processos, reduzir erros e melhorar a organização do negócio.
+Descrição 
 
+O Sistema de Gestão de Livraria é uma aplicação web desenvolvida para gerenciar as operações de uma livraria, permitindo o controle de clientes, livros, vendas e estoque. 
+O sistema tem como objetivo automatizar processos, reduzir erros e melhorar a organização do negócio. 
 
--Funcionalidades 
+-Funcionalidades  
+Clientes  
+*Cadastrar cliente  
+*Listar clientes  
+*Buscar por ID, nome ou CPF  
+*Atualizar dados  
+*Impedir CPF duplicado  
+*Impedir exclusão de cliente com vendas  
+  
+Livros  
+*Cadastrar livro  
+*Listar livros  
+*Atualizar informações  
+*Controlar estoque  
+*Impedir preço negativo  
+*Impedir venda sem estoque  
 
-Clientes 
-Cadastrar cliente 
-Listar clientes 
-Buscar por ID, nome ou CPF 
-Atualizar dados 
-Impedir CPF duplicado 
-Impedir exclusão de cliente com vendas 
+Vendas  
+*Registrar vendas  
+*Adicionar múltiplos itens  
+*Calcular valor total automaticamente  
+*Atualizar estoque após venda  
+ 
+Autenticação  
+*Login com usuário e senha  
+*Geração de token JWT  
 
-Livros 
-Cadastrar livro 
-Listar livros 
-Atualizar informações 
-Controlar estoque 
-Impedir preço negativo 
-Impedir venda sem estoque 
+Controle de acesso por perfil:  
+*ADMIN  
+*FUNCIONARIO  
 
-Vendas 
-Registrar vendas 
-Adicionar múltiplos itens 
-Calcular valor total automaticamente 
-Atualizar estoque após venda 
-Autenticação 
-Login com usuário e senha 
-Geração de token JWT 
-
-Controle de acesso por perfil: 
-
-ADMIN 
-FUNCIONARIO 
-Relatórios 
-Vendas por período 
-Vendas por cliente 
-Vendas por produto 
-
-
-
--Tecnologias Utilizadas 
-Python 
-Django 
-MySQL 
-API REST 
-JWT (Autenticação) 
-
-
-
--Arquitetura 
-O sistema segue o padrão de arquitetura em camadas: 
-
-Controller → Recebe requisições 
-Service → Regras de negócio 
-Repository → Acesso ao banco 
-Banco de Dados → Persistência 
-
+Relatórios  
+*Vendas por período  
+*Vendas por cliente  
+*Vendas por produto  
 
  
--Banco de Dados 
-
-Tabelas principais: 
-usuarios 
-clientes 
-livros 
-vendas 
-itens_venda 
-
-Relacionamentos 
-Cliente 1 Vendas 
-Usuario 1 Vendas 
-Venda 1 Itens 
-Livro 1 Itens
+-Tecnologias Utilizadas  
+*Python  
+*Django  
+*MySQL  
+*API REST  
+*JWT (Autenticação)  
 
 
+-Arquitetura  
+O sistema segue o padrão de arquitetura em camadas:  
+*Controller → Recebe requisições  
+*Service → Regras de negócio  
+*Repository → Acesso ao banco  
+*Banco de Dados → Persistência  
 
--API REST
-Autenticação
-POST /auth/login
+  
+-Banco de Dados  
+Tabelas principais:  
+*usuarios  
+*clientes  
+*livros  
+*vendas  
+*itens_venda   
 
-Clientes
-GET /clientes
-POST /clientes
-PUT /clientes/{id}
-DELETE /clientes/{id}
 
-Livros
-GET /livros
-POST /livros
-PUT /livros/{id}
-DELETE /livros/{id}
+-API REST 
+*Autenticação 
+*POST /auth/login 
 
-Vendas
-GET /vendas
-POST /vendas
+Clientes 
+*GET /clientes 
+*POST /clientes 
+*PUT /clientes/{id} 
+*DELETE /clientes/{id} 
+
+Livros 
+*GET /livros 
+*POST /livros 
+*PUT /livros/{id} 
+*DELETE /livros/{id} 
+
+Vendas 
+*GET /vendas 
+*POST /vendas 
