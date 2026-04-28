@@ -5,6 +5,7 @@ Descrição
 O Sistema de Gestão de Livraria é uma aplicação web desenvolvida para gerenciar as operações de uma livraria, permitindo o controle de clientes, livros, vendas e estoque.
 O sistema tem como objetivo automatizar processos, reduzir erros e melhorar a organização do negócio.
 
+
 -Funcionalidades 
 
 Clientes 
@@ -42,12 +43,14 @@ Vendas por cliente
 Vendas por produto 
 
 
+
 -Tecnologias Utilizadas 
 Python 
 Django 
 MySQL 
 API REST 
 JWT (Autenticação) 
+
 
 
 -Arquitetura 
@@ -57,6 +60,7 @@ Controller → Recebe requisições
 Service → Regras de negócio 
 Repository → Acesso ao banco 
 Banco de Dados → Persistência 
+
 
  
 -Banco de Dados 
@@ -73,6 +77,7 @@ Cliente 1 Vendas
 Usuario 1 Vendas 
 Venda 1 Itens 
 Livro 1 Itens
+
 
 
 -API REST
