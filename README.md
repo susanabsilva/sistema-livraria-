@@ -86,4 +86,15 @@ Livros
 
 Vendas 
 *GET /vendas 
-*POST /vendas 
+*POST /vendas  
+
+-Como Executar o Projeto 
+1.Instalar as dependências do projeto 
+
+2.Configurar o banco de dados MySQL 
+
+3.Executar o script de criação das tabelas 
+
+4.Iniciar o servidor da aplicação 
+
+5.Acessar o sistema via navegador 
